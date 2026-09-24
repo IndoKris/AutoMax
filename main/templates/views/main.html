@@ -13,7 +13,7 @@
                 <h3 class="float-md-start mb-0">AutoMax</h3>
                 <nav class="nav nav-masthead justify-content-center float-md-end">
                     {% if request.user.is_authenticated %}
-                    {% comment %} <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a> {% endcomment %}
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                     {% else %}
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
                     {% endif %}
@@ -23,15 +23,16 @@
         <main class="px-3">
             <h2>Find a deal near you!</h2>
             <p class="lead">Looking to buy or sell a used car? We've got you
-                covered. </br> AutoMax is the leading used car marketplace.</p>
+                covered. <br> AutoMax is the leading used car marketplace.</p>
             <p class="lead">
-                {% comment %} <a href="{% url 'register' %}" {% endcomment %}
-                    class="btn btn-lg btn-secondary fw-bold border-white bg-white">Register</a>
+                {% comment %}
+                <a href="{% url 'register' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Register</a>
+                {% endcomment %}
             </p>
         </main>
         <footer class="mt-auto text-white-50">
-            <p>Copyright © {% now 'Y' %} <a href="" class="text-white">AutoMax</a> by <a href="https://IndoCore.com"
-                    class="text-white">indokrisgraphihcs.com</a></p>
+            <p>Copyright © {% now 'Y' %} <a href="/" class="text-white">AutoMax</a> by <a href="https://IndoCore.com"
+                    class="text-white">Krish Kumar</a></p>
         </footer>
     </div>
 </div>
